@@ -8,6 +8,7 @@ const productSchema = new mongoose.Schema({
   type: { type: String, required: true },
   description: { type: String, required: true },
   category: { type: String, required: true, unique: false },
+  picture: { type: String, required: true, unique: false },
 //   category_id: {
 //     type:Schema.Types.ObjectId,
 //     required: true,
