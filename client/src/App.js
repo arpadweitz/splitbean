@@ -9,8 +9,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import Products from './Views/Products.js';
-
-
+import Footer from './components/Footer.js';
+import SingleProduct from './Views/SingleProduct.js';
 
 function App() {
   return (
@@ -25,8 +25,10 @@ function App() {
           <Route path= "/location" element={<Location/>}/>
           <Route path= "/coffee" element={<Coffee/>}/>
           {/* {Routes with comp to ren} */}
+          <Route path="/product/:productName" element={<SingleProduct/>} />
           </Routes>
       </Router>
+      <Footer/>
     </div>
 
   );

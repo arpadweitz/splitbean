@@ -11,6 +11,10 @@ mongoose.set('debug',true)
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+// serving static files
+const path = require('path');
+app.use('/assets', express.static(path.join(__dirname, 'public/pictures')));
+
 // to print incoming requests from mongoose in the terminal
 mongoose.set('debug',true)
 
@@ -24,14 +28,11 @@ async function connecting(){
         console.log('ERROR: Seems like your DB is not running, please start it up !!!');
     }
     }
-
     
     // redirect to routers
 
-
-// app.use('/category', require('./routes/categories'));
-// app.use('/product', require('./routes/products'));
-
+app.use('/category', require('./routes/categories'));
+app.use('/product', require('./routes/products'));
 
 // ADMINJS
 

@@ -1,9 +1,22 @@
 import React from 'react'
+import { URL } from '../config'
+import Homebanner from '../components/Homebanner'
 
-export default function Home() {
+export default function Home(props) {
 
   
   return (
-    <div>This is the product list</div>
+    <div> 
+{/* <h3>Home</h3> */}
+{/* <img className='homeBanner' src={`${URL}/assets/minimalesp.png`} alt={props.altText}/> */}
+<Homebanner/>
+</div>
   )
 }
+
+
+
+
+
+
+

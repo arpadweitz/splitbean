@@ -6,27 +6,71 @@
 
 .navbar {
   list-style: none;
-  background-color: whitesmoke;
-  height: 13vh;
+  background-color: whitesmoke  ;
+  height: 15vh;
   color: black;
   display: flex;
   justify-content: space-around;
   font-family: system-ui;
   align-items: center;
+  font-size: larger;
+  margin-bottom: 10px;
 }
 
 .navbar a {
-  color:black;
+  color: black;
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 35px;
-  height: 35px;
+  width: 65px;
+  height: 65px;
 }
 
 .espresso {
-  font-size: 40px;
+  font-size: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.filter {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  list-style: none;
+}
+
+.splitbean {
+  font-family: monospace;
+}
+
+.productImage {
+  width: 100%;
+}
+
+.homeBanner {
+  width: 100%;
+  height: 100%;
+}
+
+.productDescription {
+  font-size: large;
+}
+
+.cart{
+  width: 50px;
+  height: 50px;
+}
+
+h3 + p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
