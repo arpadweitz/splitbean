@@ -6,7 +6,7 @@ import Cart from "./Cart";
 function Navbar() {
     return <ul className="navbar">
         {/* <li><Logo /></li> */}
-        <li><Link link to="/home"> <Logo/> <p className="splitbean">The Split Bean</p> </Link></li>
+        <li><Link link to=""> <Logo/> <p className="splitbean">The Split Bean</p> </Link></li>
         <li><Link link to="/products">Products</Link></li>
         <li><Link link to="/subscription">Subscription</Link></li>
         <li><Link link to="/location">Location</Link></li>

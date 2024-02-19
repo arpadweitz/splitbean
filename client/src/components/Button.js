@@ -4,12 +4,17 @@ import styled from 'styled-components';
 const Button = styled.button`
 color: #ffffff;
 font-size: 1em;
-margin: 1em;
+margin: 1em 0em 1em 0em;
 padding: 0.25em 1em;
-border: 2px solid #604f36;
+border: 2px solid #764a38;
 border-radius: 5px;
 cursor: pointer;
-background-color: #604f36;
+background-color: #764a38;
+
+transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c3c3c3;
 `;
 
 const AddToCartButton = ({ onClick }) => {

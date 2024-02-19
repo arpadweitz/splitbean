@@ -19,8 +19,8 @@ const ProductContainer = styled.div`
 `;
 
 const ProductImage = styled.img`
-  width: 60%; /* Adjust the width of the image as desired */
-  max-width: 600px; /* Adjust the maximum width of the image as desired */
+  width: 60%; /* Adjust the width of the image*/
+  max-width: 600px; 
 `;
 
 const ProductDetails = styled.div`
