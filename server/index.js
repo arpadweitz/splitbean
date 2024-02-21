@@ -2,7 +2,8 @@ const express = require('express');
 const app = express(); 
 const mongoose = require('mongoose');
 app.use(require("cors")());
-require("dotenv").config();
+require('dotenv').config({ path: './.env' });
+
 const port = process.env.PORT || 5050; 
 
 // to print incoming requests from mongoose in the terminal
@@ -33,6 +34,7 @@ async function connecting(){
 
 app.use('/category', require('./routes/categories'));
 app.use('/product', require('./routes/products'));
+app.use('/payment', require('./routes/payment.route.js'));
 
 // ADMINJS
 

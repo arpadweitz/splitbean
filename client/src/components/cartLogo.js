@@ -1,6 +1,6 @@
 import React from 'react';
 import { URL } from '../config';
-function Cart(props) {
+function cartLogo(props) {
   return (
     <div>
       <img className='cart' src={`${URL}/assets/cart.png`} alt={props.altText} />
@@ -8,4 +8,4 @@ function Cart(props) {
   );
 }
 
-export default Cart;
+export default cartLogo;

@@ -27,7 +27,7 @@ const ProductDetails = styled.div`
   margin-left: 20px;
 `;
 
-const SingleProduct = () => {
+const SingleProduct = ({cart, setCart}) => {
   const { productName } = useParams();
   const [product, setProduct] = useState(null);
   useEffect(() => {
@@ -42,6 +42,20 @@ const SingleProduct = () => {
     fetchProduct();
   }, [productName]);
 
+  const handleAddToCart = (product) => {
+    // Check if the product is already in the cart
+    const isProductInCart = cart.some((item) => item._id === product._id);
+  
+    // If the product is already in the cart, show an alert and don't add it again
+    if (isProductInCart) {
+        alert(`${product.name} is already in your cart!`);
+    } else {
+        // If the product is not in the cart, add it
+        setCart([...cart, product]);
+        alert(`${product.name} has been added to your cart! Please check the cart for the details`);
+    }
+  };
+
   return (
     <Wrapper>
       {product && (
@@ -52,7 +66,7 @@ const SingleProduct = () => {
             <p>Price: ${product.price}</p>
             <p>Taste Profile: {product.description}</p>
             {/* Add more details here */}
-            <AddToCartButton/>
+            <AddToCartButton onClick={() => handleAddToCart(product)}/>
           </ProductDetails>
         </ProductContainer>
       )}

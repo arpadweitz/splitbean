@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./logo";
-import Cart from "./Cart";
+import Cart from "./cartLogo";
 
 function Navbar() {
     return <ul className="navbar">

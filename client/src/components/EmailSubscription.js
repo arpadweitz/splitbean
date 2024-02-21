@@ -39,7 +39,7 @@ const EmailSubscription = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Subscribed with email:', email);
+    alert('Subscribed with email:', email);
     // Clear input field after submission
     setEmail('');
   };

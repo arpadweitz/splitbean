@@ -4,7 +4,6 @@ import Homebanner from '../components/Homebanner'
 
 export default function Home(props) {
 
-  
   return (
     <div> 
 {/* <h3>Home</h3> */}

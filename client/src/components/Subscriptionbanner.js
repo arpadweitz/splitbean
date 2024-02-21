@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { URL } from '../config';
-import { Link } from 'react-router-dom';
 
 // Create a Wrapper component that'll render a <section> tag with some styles
 const Wrapper = styled.section`
