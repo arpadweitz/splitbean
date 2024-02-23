@@ -19,7 +19,7 @@ const create_checkout_session = async (req, res) => {
         product_data: {
           name: item.name,
           description: item.description,
-          images: [item.picture],
+          // images: [item.picture],
         },
       },
       quantity: item.quantity,

@@ -56,7 +56,11 @@ function Subscription() {
     <Wrapper>
       <Subscriptionbanner />
       <Text>
-        Welcome to our Coffee Subscription service! By signing up for our subscription, you're ensuring a consistent supply of freshly roasted coffee delivered right to your doorstep. Experience convenience like never before as you savor the finest coffee beans from around the world, expertly curated to suit your taste preferences. Plus, with our weekly newsletter, you'll stay updated on the latest trends, news, and innovations in the vibrant world of coffee. Subscribe now by entering your email below and embark on a journey of discovery to elevate your coffee experience!
+        Welcome to our Coffee Subscription service! By signing up for our subscription, 
+        you're ensuring a consistent supply of freshly roasted coffee delivered right to your doorstep. 
+        Experience convenience like never before as you savor the finest coffee beans from around the world, expertly curated to suit your taste preferences. 
+        Plus, with our weekly newsletter, you'll stay updated on the latest trends, news, and innovations in the vibrant world of coffee. 
+        Subscribe now by entering your email below and embark on a journey of discovery to elevate your coffee experience!
       </Text>
       {/* <Form>
         <Input type="email" placeholder="Enter your email" />

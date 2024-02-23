@@ -5,8 +5,9 @@
 }
 
 .navbar {
+  position: fixed;
   list-style: none;
-  background-color: whitesmoke  ;
+  background-color: whitesmoke;
   height: 15vh;
   color: black;
   display: flex;
@@ -14,7 +15,9 @@
   font-family: system-ui;
   align-items: center;
   font-size: larger;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  top: 0;
+  width: 100%;
 }
 
 .navbar a {
@@ -31,20 +34,39 @@
 }
 
 .espresso {
+  font-size: 19px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 90px;
+  position: fixed; /* Change from absolute to fixed */
+  top: 25vh; /* Adjust top position */
+  right: 33vw;
+  left: 20vw;
+  color: black;
+  transition: top 0.3s ease; /* Optional: Add a transition effect */
+  text-align: justify;
+}
+
+.milk, .filter, .mokapot, .bean, .coffeesubscribe {
   font-size: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.filter {
-  font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.subsc {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+  text-decoration: underline;
+  font-size: larger;
 }
+
 
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   list-style: none;
+  margin-top: 15vh;
 }
 
 .splitbean {
@@ -74,3 +96,53 @@ h3 + p {
   padding-bottom: 20px;
 }
 
+
+
+.message_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message_box {
+  width: 30%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  border-radius: 0.4em;
+}
+
+.image {
+  max-height: 5vh;
+}
+
+.image_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message_box_right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.message_box_left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.cup {
+  width: 15%;
+}

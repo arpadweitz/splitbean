@@ -1,5 +1,4 @@
 import React from 'react'
-import { URL } from '../config'
 import Homebanner from '../components/Homebanner'
 
 export default function Home(props) {

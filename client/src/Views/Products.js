@@ -43,10 +43,6 @@ const handleAddToCart = (product) => {
       // setCart((prevCart) => [...prevCart, { ...product, quantity: 1 }]);
 
 
-
-
-
-
       alert(`${product.name} has been added to your cart! Please check the cart for the details`);
   }
 };

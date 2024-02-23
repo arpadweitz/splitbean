@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 
 const Form = styled.form`
   display: flex;
@@ -31,17 +31,27 @@ const Button = styled.button`
 
 
 const EmailSubscription = () => {
-  const [email, setEmail] = useState('');
+  const defaultSubject = "Here is the message: ";
 
-  const handleInputChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    alert('Subscribed with email:', email);
-    // Clear input field after submission
-    setEmail('');
+    // Extracting email value from form field
+    const email = event.target.elements.email.value;
+
+    // Constructing data object
+    const data = { email };
+
+    try {
+      // Sending data to server
+      const res = await axios.post("http://localhost:5010/emails/send_email", data);
+      console.log("Response: ", res);
+      // Clearing the input field
+      event.target.elements.email.value = "";
+      // Inform user
+      alert("Thank you for subscribing :)");
+    } catch (error) {
+      console.log(error?.message || error);
+    }
   };
 
   return (
@@ -49,8 +59,7 @@ const EmailSubscription = () => {
       <Input
         type="email"
         placeholder="Enter your email"
-        value={email}
-        onChange={handleInputChange}
+        name="email" // Add name attribute
         required
       />
       <Button type="submit">Subscribe</Button>

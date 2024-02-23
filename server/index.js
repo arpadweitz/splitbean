@@ -1,7 +1,25 @@
 const express = require('express');
 const app = express(); 
 const mongoose = require('mongoose');
+
+// Cors settings // 
+const cors = require("cors"); // to send request from different url
 app.use(require("cors")());
+//or enable it only for the specific url
+app.options("/sendEmail", cors());
+
+// allowing requests from the front-end to our server with api calls
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+    next();
+  });
+  
+
 require('dotenv').config({ path: './.env' });
 
 const port = process.env.PORT || 5050; 
@@ -35,6 +53,8 @@ async function connecting(){
 app.use('/category', require('./routes/categories'));
 app.use('/product', require('./routes/products'));
 app.use('/payment', require('./routes/payment.route.js'));
+app.use("/emails", require("./routes/emails.routes.js"));
+
 
 // ADMINJS
 

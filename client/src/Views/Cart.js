@@ -10,10 +10,14 @@ import {Elements} from '@stripe/react-stripe-js';
 const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`);
 
 const Wrapper = styled.div`
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 16px;
+  position: static;
+  margin-top: 12vh;
+
 `;
 
 const ProductContainer = styled.div`
@@ -22,8 +26,8 @@ const ProductContainer = styled.div`
 `;
 
 const ProductImage = styled.img`
-  width: 60%;
-  max-width: 600px;
+  width: 40%;
+  max-width: 400px;
 `;
 
 const ProductDetails = styled.div`
@@ -33,7 +37,7 @@ const ProductDetails = styled.div`
 const EmptyCartMessage = styled.p`
   font-size: xx-large;
   font-family: system-ui;
-  padding: 100px;
+  padding: 40px;
 `;
 
 const Wrapper2 = styled.div`
@@ -42,6 +46,8 @@ const Wrapper2 = styled.div`
   align-items: center;
   padding: 20px;
   flex-direction: column;
+  position: relative;
+    margin-top: 15vh;
 `;
 
 
@@ -76,20 +82,19 @@ const Wrapper3 = styled.div`
 `;
 
 const CartWrapper = styled.div`
-    position: relative; 
-    max-height: calc(100vh - 100px); 
-    overflow-y: auto; 
+position: static;
+max-height: calc(110vh - 100px);
+overflow-y: auto;
 `;
 
 const SubtotalContainer = styled.div`
 position: sticky;
-top: 0;
+top: 15vh;
 background-color: #fff;
 padding: 10px;
 display: flex;
 align-items: baseline;
 justify-content: flex-end;
-
 `;
 
 function Cart({ cart, setCart }) {    
@@ -135,6 +140,7 @@ function Cart({ cart, setCart }) {
           <div>
             <Wrapper2>
               <EmptyCartMessage>Your cart is currently empty</EmptyCartMessage>
+              <img className='cup' src={`${URL}/assets/coffeecup.png`} alt={'coffecup'} />
               <ButtonGoBackToProducts />
             </Wrapper2>
           </div>

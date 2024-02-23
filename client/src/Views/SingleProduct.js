@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
+  margin-top: 15vh
 `;
 
 const ProductContainer = styled.div`
@@ -50,11 +51,21 @@ const SingleProduct = ({cart, setCart}) => {
     if (isProductInCart) {
         alert(`${product.name} is already in your cart!`);
     } else {
-        // If the product is not in the cart, add it
-        setCart([...cart, product]);
+        // If the product is not in the cart, add it and set the quantity to 1
+        setCart([...cart, {  ...product, quantity:1 } ]  ) ;
+  
+  
+        // setCart((prevCart) => [...prevCart, { ...product, quantity: 1 }]);
+  
+  
+  
+  
+  
+  
         alert(`${product.name} has been added to your cart! Please check the cart for the details`);
     }
   };
+  
 
   return (
     <Wrapper>

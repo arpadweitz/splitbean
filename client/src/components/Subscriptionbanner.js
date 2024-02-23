@@ -4,7 +4,8 @@ import { URL } from '../config';
 
 // Create a Wrapper component that'll render a <section> tag with some styles
 const Wrapper = styled.section`
-  position: relative;
+  position: static;
+  margin-top:15vh;
   padding: 10em;
   background: url('${URL}/assets/subscription.png') center/cover no-repeat; /* background image here */
   text-align: center;

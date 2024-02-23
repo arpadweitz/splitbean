@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Views/Home';
 import Subscription from './Views/Subscription';
-import Location from './Views/Location';
+import Location from './Views/Location.js';
 import Coffee from './Views/Coffee';
 import Navbar from './components/Navbar.js';
 import React, { useState } from 'react';
@@ -10,9 +10,11 @@ import Products from './Views/Products.js';
 import Footer from './components/Footer.js';
 import SingleProduct from './Views/SingleProduct.js';
 import Cart from './Views/Cart.js';
-import Stripe from "./components/stripe";
 import PaymentSuccess from "./containers/payment_success";
 import PaymentError from "./containers/payment_error";
+
+
+
 
 function App() {
 
