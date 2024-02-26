@@ -39,7 +39,7 @@ const Wrapper = styled.section`
 //   color: #604f36;
 // `;
 
-const Subscriptionbanner = () => {
+var Subscriptionbanner = () => {
     return (
       <Wrapper>
         {/* <Text>P</Text> */}
