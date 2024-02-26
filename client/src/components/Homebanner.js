@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Wrapper = styled.section`
   position: static;
   padding: 22em;
-  // background: url('${URL}/assets/minimalesp.png') center/cover no-repeat; /* Add your background image here */
-  background: url('/assets/minimalesp.png') center/cover no-repeat; /* Use a relative path */
+  background: url('${URL}/assets/minimalesp.png') center/cover no-repeat; /* Add your background image here */
+  // background: url('/assets/minimalesp.png') center/cover no-repeat; /* Use a relative path */
   text-align: center;
   color: #764a38; /* Text color for the text inside the wrapper */
   width: 100%
