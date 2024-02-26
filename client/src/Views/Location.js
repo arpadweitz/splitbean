@@ -9,6 +9,8 @@ function Location() {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        title="Google Maps Location"
+
       ></iframe>
     </div>
   );

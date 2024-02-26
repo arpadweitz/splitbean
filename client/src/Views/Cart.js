@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { URL } from '../config';
-import ButtonCheckout from '../components/Button_checkout';
 import ButtonGoBackToProducts from '../components/ButtonGoBackToProducts';
 import Checkout from '../components/Checkout';
 import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
+
 
 const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`);
 
@@ -73,13 +73,13 @@ padding-left: 1em;
 padding-right: 1em;
 `
 
-const Wrapper3 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex-direction: column;
-`;
+// const Wrapper3 = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 20px;
+//   flex-direction: column;
+// `;
 
 const CartWrapper = styled.div`
 position: static;

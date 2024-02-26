@@ -23,33 +23,7 @@ const Text = styled.p`
 
 `;
 
-// const Form = styled.form`
-//   display: flex;
-//   flex-direction: column;
-//   max-width: 300px;
-//   margin: 20px auto;
-// `;
 
-// const Input = styled.input`
-//   padding: 10px;
-//   margin-bottom: 10px;
-//   border: 1px solid #ccc;
-//   border-radius: 5px;
-// `;
-
-// const Button = styled.button`
-//   padding: 10px;
-//   background-color: #943c05;
-//   color: white;
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease;
-
-//   &:hover {
-//     background-color: #c9761b;
-//   }
-// `;
 
 function Subscription() {
   return (

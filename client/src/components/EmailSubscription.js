@@ -31,7 +31,7 @@ const Button = styled.button`
 
 
 const EmailSubscription = () => {
-  const defaultSubject = "Here is the message: ";
+  // const defaultSubject = "Here is the message: ";
 
   const handleSubmit = async (event) => {
     event.preventDefault();

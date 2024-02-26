@@ -31,8 +31,19 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 // serving static files
+
 const path = require('path');
 app.use('/assets', express.static(path.join(__dirname, 'public/pictures')));
+
+
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
+
+
 
 // to print incoming requests from mongoose in the terminal
 mongoose.set('debug',true)
@@ -61,6 +72,8 @@ app.use("/emails", require("./routes/emails.routes.js"));
 // first install adminjs and the dependencies
 // npm i adminjs @adminjs/express @adminjs/mongoose  tslib express-formidable express-session
 
+const NODE_ENV = process.env.NODE_ENV // <-- check the environment
+if(NODE_ENV==='dev') {
 // require adminjs
 const AdminJS = require("adminjs");
 // require express plugin
@@ -81,7 +94,7 @@ const admin = new AdminJS(adminOptions);
 const router = AdminJSExpress.buildRouter(admin);
 app.use(admin.options.rootPath, router);
 // end ADMINJS
-
+}
 
     connecting().then(()=>{
         app.listen(port, () => console.log(`listening on port ${port}`))

@@ -27,8 +27,6 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 text-decoration: none;
-}
-
 `;
 
 // const Title = styled.h1`
