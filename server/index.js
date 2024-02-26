@@ -36,12 +36,6 @@ const path = require('path');
 app.use('/assets', express.static(path.join(__dirname, 'public/pictures')));
 
 
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, '../client/build')));
-
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-});
 
 
 
@@ -67,6 +61,12 @@ app.use('/payment', require('./routes/payment.route.js'));
 app.use("/emails", require("./routes/emails.routes.js"));
 
 
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
 // ADMINJS
 
 // first install adminjs and the dependencies
