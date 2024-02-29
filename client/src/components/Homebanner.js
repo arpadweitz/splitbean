@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Wrapper = styled.section`
   position: static;
   padding: 22em;
-  background: url('${URL}/assets/minimalesp.png') center/cover no-repeat;
+  background: url('${URL}/assets/home5.jpeg') center/cover no-repeat;
   text-align: center;
   color: #764a38;
   width: 100%
