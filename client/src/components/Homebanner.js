@@ -27,6 +27,12 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 text-decoration: none;
+
+transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c3c3c3;
+
 `;
 
 // const Title = styled.h1`
