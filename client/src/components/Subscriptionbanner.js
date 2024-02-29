@@ -6,7 +6,7 @@ const Wrapper = styled.section`
   position: static;
   margin-top:15vh;
   padding: 10em;
-  background: url('${URL}/assets/sub3.png') center/cover no-repeat;
+  background: url('${URL}/assets/subscription.png') center/cover no-repeat;
   text-align: center;
   color: #dbb275; 
   width: 100%
