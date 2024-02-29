@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { URL } from '../config';
 
-// Create a Wrapper component that'll render a <section> tag with some styles
 const Wrapper = styled.section`
   position: static;
   margin-top:15vh;
   padding: 10em;
-  background: url('${URL}/assets/subscription.png') center/cover no-repeat; /* background image here */
+  background: url('${URL}/assets/sub3.png') center/cover no-repeat;
   text-align: center;
-  color: #dbb275; /* Text color for the text inside the wrapper */
+  color: #dbb275; 
   width: 100%
   height: 30vh
 `;
