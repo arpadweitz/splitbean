@@ -1,4 +1,4 @@
-# **Coffee E-Commerce Platform**
+# **Coffee E-Commerce Web App**
 
 Welcome to the Coffee E-Commerce Platform! This platform allows users to explore and purchase a variety of premium coffee blends from the comfort of their homes. With a user-friendly interface and secure payment processing, coffee enthusiasts can enjoy a seamless shopping experience.
 
