@@ -1,4 +1,3 @@
-Coffee E-Commerce Web project
 Welcome to the Coffee E-Commerce Platform! This platform allows users to explore and purchase a variety of  coffee blends from the comfort of their homes.
 
 Installation
