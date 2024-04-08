@@ -1,4 +1,5 @@
-Welcome to the Coffee E-Commerce Platform! This platform allows users to explore and purchase a variety of  coffee blends from the comfort of their homes.
+#Welcome to the Coffee E-Commerce Platform! 
+This platform allows users to explore and purchase a variety of  coffee blends from the comfort of their homes.
 
 Installation:
 To run the Coffee E-Commerce Platform locally, follow these steps:
